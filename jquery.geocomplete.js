@@ -387,6 +387,7 @@
       // Add infos about the address and geometry.
       $.extend(data, {
         formatted_address: result.formatted_address,
+        street_address: data.street_number + ' ' + data.route,
         location_type: geometry.location_type || "PLACES",
         viewport: viewport,
         bounds: bounds,
